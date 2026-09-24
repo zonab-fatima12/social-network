@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>SocialConnect</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+
+    <!-- ===============================
+         Header
+    ================================ -->
+
+    <header class="navbar">
+
+        <h1>SocialConnect</h1>
+
+        <div class="nav-actions">
+
+            <!-- Home -->
+            <button id="homeBtn">
+                🏠
+            </button>
+
+
+            <!-- Notifications -->
+            <div class="notification-wrapper">
+
+                <button id="notificationBtn">
+
+                    🔔
+
+                    <span id="notificationCount">
+                        0
+                    </span>
+
+                </button>
+
+
+                <!-- Notification Box -->
+                <div
+                    id="notificationBox"
+                    class="notification-box"
+                >
+
+                    <h3>
+                        Notifications
+                    </h3>
+
+                    <div id="notificationList">
+
+                        <p class="no-notification">
+                            No notifications
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Profile -->
+            <button id="profileBtn">
+                👤
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ===============================
+         Main Container
+    ================================ -->
+
+    <main class="container">
+
+
+        <!-- ===============================
+             Profile Section
+        ================================ -->
+
+        <section class="profile-card">
+
+
+            <!-- Cover Photo -->
+            <div class="cover-photo"></div>
+
+
+            <!-- Profile Information -->
+            <div class="profile-info">
+
+                <div class="profile-picture">
+                    👤
+                </div>
+
+                <div>
+
+                    <h2>
+                        Zonab Fatima
+                    </h2>
+
+                    <p>
+                        BS Information Technology Student
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Profile Buttons -->
+
+           <button id="editProfileBtn" class="edit-profile">
+    Edit Profile
+</button>
+
+            <button
+                id="friendRequestBtn"
+                class="friend-btn"
+            >
+                Add Friend
+            </button>
+
+
+        </section>
+
+<!-- Profile Settings -->
+
+<section id="profileSettings" class="profile-settings">
+
+    <h2>Edit Profile</h2>
+
+    <input
+        type="text"
+        id="nameInput"
+        placeholder="Enter your name"
+        value="Zonab Fatima"
+    >
+
+    <input
+        type="text"
+        id="bioInput"
+        placeholder="Enter your bio"
+        value="BS Information Technology Student"
+    >
+
+    <h3>Privacy</h3>
+
+    <label>
+        <input
+            type="radio"
+            name="privacy"
+            value="public"
+            checked
+        >
+        Public Profile
+    </label>
+
+    <label>
+        <input
+            type="radio"
+            name="privacy"
+            value="friends"
+        >
+        Friends Only
+    </label>
+
+    <div class="settings-buttons">
+
+        <button id="saveProfileBtn">
+            Save Changes
+        </button>
+
+        <button id="cancelProfileBtn">
+            Cancel
+        </button>
+
+    </div>
+
+</section>
+
+        <!-- ===============================
+             Create Post
+        ================================ -->
+
+        <section class="create-post">
+
+            <h2>
+                Create Post
+            </h2>
+
+
+            <textarea
+                id="postInput"
+                placeholder="What's on your mind?"
+            ></textarea>
+
+
+            <div class="post-actions">
+
+                <button id="photoButton">
+    🖼️ Photo
+</button>
+
+<button id="videoButton">
+    🎥 Video
+</button>
+
+<input
+    type="file"
+    id="photoInput"
+    accept="image/*"
+    hidden
+>
+
+<input
+    type="file"
+    id="videoInput"
+    accept="video/*"
+    hidden
+>
+
+                <button id="postButton">
+                    Post
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ===============================
+             Posts
+        ================================ -->
+
+        <section id="postsContainer">
+
+            <!-- Posts will appear here -->
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
